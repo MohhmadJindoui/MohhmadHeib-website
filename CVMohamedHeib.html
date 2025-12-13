@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>My CV - Computer Networks</title>
+    <title>קורות חיים - מוחמד חיב</title>
     <style>
         body {
             margin: 0;
@@ -39,9 +39,24 @@
         }
 
         h1 {
-            margin-top: 0;
+            margin: 0;
             font-size: 2rem;
             color: #111827;
+        }
+
+        .contact-line {
+            margin-top: 4px;
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+
+        .contact-line a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+
+        .contact-line a:hover {
+            text-decoration: underline;
         }
 
         nav {
@@ -80,30 +95,66 @@
             border-radius: 14px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.25);
         }
+
+        main h2 {
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+            color: #111827;
+        }
+
+        main p {
+            line-height: 1.7;
+            font-size: 0.98rem;
+            color: #111827;
+        }
+
+        ul {
+            margin-top: 4px;
+            padding-right: 18px;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 24px;
+            margin-top: 18px;
+            align-items: flex-start;
+        }
+
         .quote {
-    margin: 24px auto 8px;
-    padding: 10px 18px;
-    max-width: 650px;
-    border-right: 4px solid #2563eb;
-    color: #1e3a8a;
-    font-size: 1.1rem;
-    line-height: 1.9;
-    text-align: right;
-}
+            margin: 24px auto 8px;
+            padding: 10px 18px;
+            max-width: 650px;
+            border-right: 4px solid #2563eb;
+            color: #1e3a8a;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            text-align: right;
+        }
 
-.quote-source {
-    display: block;
-    margin-top: 8px;
-    font-weight: 600;
-    color: #1e3a8a;
-}
+        .quote-source {
+            display: block;
+            margin-top: 8px;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
 
-.quote-explain {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 0.97rem;
-    color: #1e3a8a;
-}
+        .quote-explain {
+            margin-top: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #1e3a8a;
+        }
+
+        footer {
+            margin-top: 28px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #374151;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 
@@ -113,6 +164,12 @@
 
         <header>
             <h1>מוחמד חיב – קורות חיים</h1>
+            <p class="contact-line">
+                🏠 עמק יזרעאל | 📧 
+                <a href="jindawemohhmad@gmail.com">youremail@example.com/a> |
+                <a href="https://github.com/MohhmadJindoui" target="_blank">GitHub</a> |
+                <a href="www.linkedin.com/in/mohhmad-jindawe-3b7280363" target="_blank">LinkedIn</a>
+            </p>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -122,79 +179,102 @@
         </header>
 
         <main>
-            <h2>פרטים אישיים</h2>
 
-            <!-- תמונה כפי שהמטלה דורשת -->
-            <img
-                    src="myphoto.jpeg"
-                    alt="תמונה אישית"
-                    width="220"
-                    height="220"
-                    style="border-radius: 14px; box-shadow: 0 10px 20px rgba(0,0,0,0.25);">
-
+            <h2>תקציר מקצועי</h2>
             <p>
-                סטודנט למערכות מידע B.Sc, בעל ידע בתכנות SQL server ,Data Structure,Java,Python,OOP, HTML, CSS,
-                בניית מערכות מידע ופרויקטים אקדמיים.
+                סטודנט לתואר B.Sc במערכות מידע במכללה האקדמית עמק יזרעאל, עם ניסיון מעשי בפרויקטים אקדמיים
+                בפיתוח תוכנה, בניית אתרי אינטרנט ומערכות מידע. עובד עם Java, Python, SQL, HTML &amp; CSS
+                ומתעניין בפיתוח צד שרת, בסיסי נתונים וניתוח מערכות. מחפש הזדמנות להשתלב כסטודנט/Junior בעולם ההייטק.
             </p>
 
-            <h2>כישורים טכניים</h2>
+            <div class="two-columns">
+                <section>
+                    <h2>פרטים אישיים</h2>
+
+                    <img
+                        src="myphoto.jpeg"
+                        alt="תמונה אישית"
+                        width="220"
+                        height="220">
+
+                    <p style="margin-top: 14px;">
+                        • שם: מוחמד חיב<br>
+                        • תואר: סטודנט למערכות מידע B.Sc<br>
+                        • מוסד לימודים: המכללה האקדמית עמק יזרעאל<br>
+                        • שנת לימודים: 2024–2026
+                    </p>
+
+                    <h2>השכלה</h2>
+                    <ul>
+                        <li><strong>2024–2026:</strong> תואר ראשון B.Sc במערכות מידע – המכללה האקדמית עמק יזרעאל</li>
+                        <li><strong>2021:</strong> תעודת בגרות מלאה</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>כישורים טכניים</h2>
+                    <ul>
+                        <li>תכנות מונחה עצמים (Java, OOP)</li>
+                        <li>Python</li>
+                        <li>מבני נתונים</li>
+                        <li>בסיסי נתונים ו-SQL (SQL Server)</li>
+                        <li>בניית אתרים – HTML &amp; CSS</li>
+                        <li>רשתות מחשבים (Computer Networks)</li>
+                        <li>אפיון ותכן מערכות מידע</li>
+                        <li>חדו״א, סטטיסטיקה, אלגברה לינארית</li>
+                    </ul>
+
+                    <h2>שפות</h2>
+                    <ul>
+                        <li>עברית – ברמת שפת אם/גבוהה</li>
+                        <li>ערבית – שפת אם</li>
+                        <li>אנגלית – קריאה וכתיבה ברמה אקדמית</li>
+                    </ul>
+                </section>
+            </div>
+
+            <h2>ניסיון מקצועי / פרויקטים</h2>
             <ul>
-                <li>תכנות מונחה עצמים (Java)</li>
-                <li>בניית אתרים – HTML & CSS</li>
-                <li>בסיסי נתונים (SQL)</li>
-                <li>רשתות מחשבים</li>
-                <li>מבני נתונים</li>
-                <li>מסדי נתונים</li>
-                <li>אפיון ותכן מערכות מידע</li>
-                <li>פייתון</li>
-                <li>חדו״א</li>
-                <li>סטטיסטיקה</li>
-                <li>אלגברה לינארית</li>
-            </ul>
-            <h2>השכלה</h2>
-            <ul>
-                <li><strong>2024–2026:</strong> תואר ראשון מערכות מידע – המכללה האקדמית עמק יזרעאל</li>
-                <li><strong>2021:</strong> תעודת בגרות מלאה</li>
+                <li>
+                    <strong>מערכת ניהול בנק</strong> – פיתוח מערכת המדמה ניהול חשבונות, לקוחות ועובדי בנק
+                    באמצעות Java, ירושה, פולימורפיזם וחריגות (Exceptions).
+                </li>
+                <li>
+                    <strong>מערכת ניהול ספרייה</strong> – עבודה עם מחלקות אבסטרקטיות, ממשק Comparable
+                    ויישום לוגיקה של השאלות ספרים, כתבי עת וסרטים.
+                </li>
+                <li>
+                    <strong>מערכת ניהול תחבורה</strong> – שימוש ב-Collections, Comparator ואלגוריתמי מיון
+                    לניהול טיסות/רכבות ויעדים.
+                </li>
+                <li>
+                    <strong>מערכת ניהול קבוצת ספורט</strong> – פיתוח מערכת לניהול שחקנים, מאמנים וקבוצה
+                    תוך שימוש בירושה ופולימורפיזם.
+                </li>
             </ul>
 
-            <h2>פרויקטים</h2>
-            <ul>
-                <li>מערכת ניהול בנק (OOP + Exceptions)</li>
-                <li>מערכת ניהול ספרייה (Interfaces + Comparable)</li>
-                <li>מערכת ניהול תחבורה (Collections + Sorting)</li>
-                <li>מערכת ניהול קבוצת ספורט (Polymorphism)</li>
-            </ul>
-
+            <h2>ציטוט אישי</h2>
             <blockquote class="quote">
                 "הדרך להיות מפתח טוב היא ללמוד משהו חדש בכל יום — אפילו דבר קטן יכול לשנות את הדרך שבה אתה חושב."
             </blockquote>
 
-            <p class="quote-source">
-                 עולם התכנות
-            </p>
-
+            <span class="quote-source">עולם התכנות</span>
             <p class="quote-explain">
                 הציטוט הזה נותן לי מוטיבציה להמשיך ללמוד ולהתקדם בכל יום,
                 גם אם ההתקדמות היא בצעדים קטנים.
             </p>
+
         </main>
-        <footer style="
-    margin-top: 40px;
-    padding: 15px 0;
-    border-top: 1px solid #d1d5db;
-    text-align: center;
-    font-size: 0.87rem;
-    color: #1f2937;
-    opacity: 0.9;
-">
-    © 2025 Mohammad Heib – Information Systems B.Sc | Personal Website
-</footer>
+
+        <footer>
+            © 2025 Mohammad Heib – Information Systems B.Sc | Personal Website
+        </footer>
 
     </div>
 </div>
 
 </body>
-    </html>
+</html>
 
 
 
