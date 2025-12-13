@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website - Computer Networks</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            direction: rtl;
+        }
+
+        .page {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            padding: 24px 32px;
+            border-radius: 24px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        header {
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0 0 6px 0;
+            font-size: 1.9rem;
+            color: #111827;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 999px;
+            border: 1px solid #ccd4ff;
+            background: #f5f6ff;
+            color: #1b2559;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+        }
+
+        nav a:hover {
+            background: #3b82f6;
+            color: #ffffff;
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.5);
+            transform: translateY(-2px);
+        }
+
+        nav a.active {
+            background: #1d4ed8;
+            color: #ffffff;
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.7);
+        }
+
+        main {
+            color: #111827;
+        }
+
+        main h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 18px 16px;
+                border-radius: 18px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+
+        <header>
+            <h1>ברוכים הבאים לאתר האישי שלי</h1>
+
+            <nav>
+                <a href="Home.html" class="active">Home</a>
+                <a href="CVMohamedHeib.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>דף הבית</h2>
+            <p>זהו דף הבית של המטלה בקורס Computer Networks.</p>
+            <h2>מודל ה-OSI</h2>
+
+            <figure style="margin-top: 20px; text-align: center;">
+                <img
+                        src="https://th.bing.com/th/id/OIG3.i4hLIZbPobTs7k0UCbW2?w=270&h=270&c=6&r=0&o=5&cb=ucfimg2&pid=ImgGn&ucfimg=1"
+                        alt="מודל שבע השכבות של OSI"
+                        width="350"
+                        style="border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.25);">
+
+                <figcaption style="margin-top: 10px; font-size: 0.9rem; color: #374151;">
+                    איור: מודל שבע השכבות של OSI כפי שמוצג בספרות הרשתות.
+                </figcaption>
+            </figure>
+            <p style="margin-top: 20px; font-size: 1rem; line-height: 1.7;">
+                מודל ה-OSI הוא מודל לוגי המתאר כיצד מידע עובר ממחשב אחד לאחר דרך הרשת.
+                המודל מחולק לשבע שכבות, כאשר כל שכבה אחראית על פונקציות שונות בתהליך התקשורת.
+                לדוגמה, שכבת ה-Transport (שכבה 4) אחראית להעברת מידע בצורה אמינה בין מחשבים,
+                טיפול בבקרת שגיאות, ניהול חיבורים ופרוטוקולים כמו TCP ו-UDP.
+            </p>
+        </main>
+
+    </div>
+</div>
+
+</body>
+</html>
